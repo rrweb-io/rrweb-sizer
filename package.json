@@ -1,0 +1,29 @@
+{
+  "name": "rrweb-sizer",
+  "version": "0.1.0",
+  "description": "analyze rrweb events size",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -b .",
+    "typings": "tsc -d --emitDeclarationOnly --declarationDir typings",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublish": "npm run build && npm run typings"
+  },
+  "keywords": [
+    "rrweb",
+    "size"
+  ],
+  "author": "yanzhen@smartx.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  }
+}
