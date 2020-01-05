@@ -17,6 +17,7 @@
   "author": "yanzhen@smartx.com",
   "license": "MIT",
   "dependencies": {
+    "@msgpack/msgpack": "^1.10.0",
     "rrweb": "^0.7.27",
     "rrweb-snapshot": "^0.7.23"
   },
