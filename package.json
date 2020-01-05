@@ -18,6 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "@msgpack/msgpack": "^1.10.0",
+    "@types/pako": "^1.0.1",
+    "pako": "^1.0.10",
     "rrweb": "^0.7.27",
     "rrweb-snapshot": "^0.7.23"
   },
