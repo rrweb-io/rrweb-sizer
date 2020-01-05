@@ -15,4 +15,5 @@ function getFile(p: string): File {
   };
 }
 
-export const realWorld = getFile(path.resolve(__dirname, "./real-world.json"));
+export const e1 = getFile(path.resolve(__dirname, "./e1.json"));
+export const e2 = getFile(path.resolve(__dirname, "./e2.json"));

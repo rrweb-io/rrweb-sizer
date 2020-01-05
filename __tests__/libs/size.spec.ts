@@ -1,9 +1,9 @@
 import { getSize } from "../../src/libs/size";
-import { realWorld } from "../__fixture__/";
+import { e1 } from "../__fixture__/";
 
 describe("get size", () => {
   it("get byte size of string", () => {
-    expect(getSize(realWorld.content)).toEqual(realWorld.size);
+    expect(getSize(e1.content)).toEqual(e1.size);
   });
 
   const suites = [

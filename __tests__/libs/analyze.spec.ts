@@ -5,14 +5,14 @@ import {
   groupIncrementalSnapshotBySource,
   groupMutationByType
 } from "../../src/libs/analyze";
-import { realWorld } from "../__fixture__/";
+import { e1 } from "../__fixture__/";
 import { incrementalSnapshotEvent, mutationData } from "rrweb/typings/types";
 
-const realWorldEvents = parse(realWorld.content);
+const e1Events = parse(e1.content);
 
 describe("group event by type", () => {
   it("real world", () => {
-    const events = realWorldEvents;
+    const events = e1Events;
     const stats = groupEventByType(events);
     expect(stats).toMatchInlineSnapshot(`
       Object {
@@ -29,7 +29,7 @@ describe("group event by type", () => {
 
 describe("group incremental snapshot by source", () => {
   it("real world", () => {
-    const events = realWorldEvents.filter(
+    const events = e1Events.filter(
       e => e.type === EventType.IncrementalSnapshot
     );
     const stats = groupIncrementalSnapshotBySource(
@@ -51,7 +51,7 @@ describe("group incremental snapshot by source", () => {
 
 describe("group mutation data by type", () => {
   it("real world", () => {
-    const mutations = realWorldEvents
+    const mutations = e1Events
       .filter(
         e =>
           e.type === EventType.IncrementalSnapshot &&
